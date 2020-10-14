@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-weight: '한컴 윤고딕 250','나눔고딕', sans-serif;
+        }
+        /*배너 규격 700 x 400 */
+        .banner {
+            background: #ccc;
+            width: 700px; height: 400px;
+            position: relative;
+        }
+        .banner > video {
+            position: absolute;
+        }
+        .banner > header {
+            position: relative;
+            color: #fff;
+        }
+        .banner > .btn_call {
+            position: absolute;
+            left: 265px; top: 318px;
+            display: block;
+            width: 170px; height: 40px;
+            background: #fff;
+            color: #000;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        /*header {font-family: 'Courgette', cursive;}*/
+
+        header > h1 > span:first-child {
+            font-size: 60px;
+            display: block;
+            position: absolute;
+            left: 220px; top: 77px;
+            text-shadow: 2px 2px 4px #000;
+            opacity: 0;
+            animation-name: title;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        header > h1 > span:last-child {
+            font-size: 57px;
+            font-weight: bold;
+            display: block;
+            position: absolute;
+            left: 24px; top: 157px;
+            text-shadow: 2px 2px 4px #000;
+            opacity: 0;
+            animation-name: title;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.4s;
+        }
+        @keyframes title{
+            0% {opacity:0;}
+            15% {opacity: 0;}
+            30% {opacity: 1;}
+            90% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div href="#" class="banner">
+        <video 
+        src="./iphone.mp4"
+        autoplay
+        loop
+        muted></video>
+    <header>
+        <h1>
+            <span>iPhone 12</span>
+            <span>스피드 그 이상의 스피드.</span>
+        </h1>
+    </header>
+    <a href="https://www.apple.com/kr/iphone-12/" class="btn_call">주문하기</a>
+</div>
+</body>
+</html>
